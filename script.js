@@ -1,5 +1,11 @@
-function areaofsquare(){
-   var side = document.getElementById("side").value;
-   var output = side*side;
-   document.getElementById("area_status").innerHTML="your area is "+output;
+let number = 0
+
+document.getElementById('math-calculate').addEventListener('click', calculate)
+
+function calculate () {
+  number = document.getElementById('input-numbers').value
+  number = parseInt(number)
+  number = number * number
+  alert(number)
+  onclick = document.getElementById('input-numbers').value = ''
 }
